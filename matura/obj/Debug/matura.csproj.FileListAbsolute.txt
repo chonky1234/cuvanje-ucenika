@@ -1,0 +1,12 @@
+C:\Users\Ucenik.PRVABEOGIM\source\repos\matura\matura\bin\Debug\matura.exe.config
+C:\Users\Ucenik.PRVABEOGIM\source\repos\matura\matura\bin\Debug\matura.exe
+C:\Users\Ucenik.PRVABEOGIM\source\repos\matura\matura\bin\Debug\matura.pdb
+C:\Users\Ucenik.PRVABEOGIM\source\repos\matura\matura\obj\Debug\matura.csproj.AssemblyReference.cache
+C:\Users\Ucenik.PRVABEOGIM\source\repos\matura\matura\obj\Debug\matura.Form1.resources
+C:\Users\Ucenik.PRVABEOGIM\source\repos\matura\matura\obj\Debug\matura.Properties.Resources.resources
+C:\Users\Ucenik.PRVABEOGIM\source\repos\matura\matura\obj\Debug\matura.csproj.GenerateResource.cache
+C:\Users\Ucenik.PRVABEOGIM\source\repos\matura\matura\obj\Debug\matura.csproj.CoreCompileInputs.cache
+C:\Users\Ucenik.PRVABEOGIM\source\repos\matura\matura\obj\Debug\matura.exe
+C:\Users\Ucenik.PRVABEOGIM\source\repos\matura\matura\obj\Debug\matura.pdb
+C:\Users\Ucenik.PRVABEOGIM\source\repos\matura\matura\obj\Debug\matura.unesi.resources
+C:\Users\Ucenik.PRVABEOGIM\source\repos\matura\matura\obj\Debug\matura.templateovi.resources
