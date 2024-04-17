@@ -10,3 +10,16 @@ C:\Users\Ucenik.PRVABEOGIM\source\repos\matura\matura\obj\Debug\matura.exe
 C:\Users\Ucenik.PRVABEOGIM\source\repos\matura\matura\obj\Debug\matura.pdb
 C:\Users\Ucenik.PRVABEOGIM\source\repos\matura\matura\obj\Debug\matura.unesi.resources
 C:\Users\Ucenik.PRVABEOGIM\source\repos\matura\matura\obj\Debug\matura.templateovi.resources
+D:\PROGRAMIRANJE\C#\matura zip temp i skrol donekle\matura\matura\bin\Debug\matura.exe.config
+D:\PROGRAMIRANJE\C#\matura zip temp i skrol donekle\matura\matura\bin\Debug\matura.exe
+D:\PROGRAMIRANJE\C#\matura zip temp i skrol donekle\matura\matura\bin\Debug\matura.pdb
+D:\PROGRAMIRANJE\C#\matura zip temp i skrol donekle\matura\matura\obj\Debug\matura.csproj.AssemblyReference.cache
+D:\PROGRAMIRANJE\C#\matura zip temp i skrol donekle\matura\matura\obj\Debug\matura.csproj.SuggestedBindingRedirects.cache
+D:\PROGRAMIRANJE\C#\matura zip temp i skrol donekle\matura\matura\obj\Debug\matura.Form1.resources
+D:\PROGRAMIRANJE\C#\matura zip temp i skrol donekle\matura\matura\obj\Debug\matura.Properties.Resources.resources
+D:\PROGRAMIRANJE\C#\matura zip temp i skrol donekle\matura\matura\obj\Debug\matura.templateovi.resources
+D:\PROGRAMIRANJE\C#\matura zip temp i skrol donekle\matura\matura\obj\Debug\matura.unesi.resources
+D:\PROGRAMIRANJE\C#\matura zip temp i skrol donekle\matura\matura\obj\Debug\matura.csproj.GenerateResource.cache
+D:\PROGRAMIRANJE\C#\matura zip temp i skrol donekle\matura\matura\obj\Debug\matura.csproj.CoreCompileInputs.cache
+D:\PROGRAMIRANJE\C#\matura zip temp i skrol donekle\matura\matura\obj\Debug\matura.exe
+D:\PROGRAMIRANJE\C#\matura zip temp i skrol donekle\matura\matura\obj\Debug\matura.pdb

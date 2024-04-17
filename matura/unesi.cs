@@ -14,6 +14,8 @@ namespace matura
     public partial class unesi : Form
     {
         public int u = 0;
+        templateovi temp = new templateovi();
+
         public string[] redovi = File.ReadAllLines("ucenici.txt");
         public unesi()
         {
@@ -48,8 +50,7 @@ namespace matura
         private void btSacuvajTemplate_Click(object sender, EventArgs e)
         {
             string[] s = {template.br.ToString(), txtIme.Text, txtPrezime.Text, cbSkola.Text, txtOdeljenje.Text, cbTipMature.Text, cbJezik.Text, cbPrviPredmet.Text, cbDrugiPredmet.Text, cbTreciPredmet.Text };
-
-            Form1.temp.ubaci(s);
+            temp.ubaci(s);
 
             template stefan = new template(txtIme.Text, txtPrezime.Text, cbSkola.Text, txtOdeljenje.Text, cbTipMature.Text, cbJezik.Text, cbPrviPredmet.Text, cbDrugiPredmet.Text, cbTreciPredmet.Text);
             stefan.sacuvajTemplate();
@@ -353,6 +354,18 @@ Masinska skola
                     cbTreciPredmet.Text += redovi[u][i];
                 }
             }
+        }
+
+        private void txtOdeljenje_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnIzaberiTemplate_Click(object sender, EventArgs e)
+        {
+            //templateovi temp = new templateovi();
+            temp.ShowDialog();
+            iskoristiTemplate(temp.p);
         }
     }
 }

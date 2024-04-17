@@ -13,7 +13,7 @@ namespace matura
 {
     public partial class templateovi : Form
     {
-
+        public string[] p = null;
         public templateovi()
         {
             InitializeComponent();
@@ -114,7 +114,7 @@ namespace matura
 
 
 
-            string[] p = {dgvTemplateovi.SelectedRows[0].Cells[1].Value.ToString(),
+            p = new string[] {dgvTemplateovi.SelectedRows[0].Cells[1].Value.ToString(),
             dgvTemplateovi.SelectedRows[0].Cells[2].Value.ToString(),
             dgvTemplateovi.SelectedRows[0].Cells[3].Value.ToString(),
             dgvTemplateovi.SelectedRows[0].Cells[4].Value.ToString(),
@@ -124,7 +124,7 @@ namespace matura
             dgvTemplateovi.SelectedRows[0].Cells[8].Value.ToString(),
             dgvTemplateovi.SelectedRows[0].Cells[9].Value.ToString()};
 
-            Form1.strahinja.iskoristiTemplate(p);
+            //Form1.strahinja.iskoristiTemplate(p);
         }
     }
 }

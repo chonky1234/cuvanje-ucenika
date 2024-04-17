@@ -12,8 +12,6 @@ namespace matura
 {
     public partial class Form1 : Form
     {
-        public static unesi strahinja = new unesi();
-        public static templateovi temp = new templateovi();
         public Form1()
         {
             InitializeComponent();
@@ -21,13 +19,8 @@ namespace matura
 
         private void btUnesiUcenika_Click(object sender, EventArgs e)
         {
-
-            strahinja.Show();
-        }
-
-        private void btUcitajTemplate_Click(object sender, EventArgs e)
-        {
-            temp.Show();
+                unesi strahinja = new unesi();
+                strahinja.ShowDialog();
         }
 
         private void Form1_Load(object sender, EventArgs e)
