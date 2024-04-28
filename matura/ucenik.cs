@@ -47,9 +47,18 @@ namespace matura
             {
 
             }*/
+
+            string bezN;
+            if (this.ime[0] == '\n')
+            {
+                bezN = this.ime.Remove(0, 1);
+            }
+            else
+            {
+                bezN = this.ime;
+            }    
             
-            
-            pera.WriteLine(this.ime + ";" + this.prezime + ";" + this.skola + ";" + this.odeljenje + ";" + this.tipmature + ";" + this.jezik + ";" + this.prvipredmet + ";" + this.drugipredmet + ";" + this.trecipredmet);
+            pera.WriteLine(bezN + ";" + this.prezime + ";" + this.skola + ";" + this.odeljenje + ";" + this.tipmature + ";" + this.jezik + ";" + this.prvipredmet + ";" + this.drugipredmet + ";" + this.trecipredmet);
             pera.Close();
         }
     }

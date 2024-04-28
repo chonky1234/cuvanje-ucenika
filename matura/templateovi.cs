@@ -38,6 +38,16 @@ namespace matura
                     string[] p = {z.ToString(), ime, prezime, skola, odeljenje, tipmature, jezik, prvipredmet, drugipredmet, trecipredmet };
                     dgvTemplateovi.Rows.Add(p);
                     z++;
+                    ime = "";
+                    prezime = "";
+                    skola = "";
+                    odeljenje = "";
+                    tipmature = "";
+                    jezik = "";
+                    prvipredmet = "";
+                    drugipredmet = "";
+                    trecipredmet = "";
+                    b = 0;
                 }
                 if (s[i] == ';')
                 {
@@ -102,27 +112,30 @@ namespace matura
 
         private void btStaviTemplate_Click(object sender, EventArgs e)
         {
-            /*string[] p = {dgvTemplateovi.SelectedCells[1].ToString(),
-            dgvTemplateovi.SelectedCells[2].ToString(),
-            dgvTemplateovi.SelectedCells[3].ToString(),
-            dgvTemplateovi.SelectedCells[4].ToString(),
-            dgvTemplateovi.SelectedCells[5].ToString(),
-            dgvTemplateovi.SelectedCells[6].ToString(),
-            dgvTemplateovi.SelectedCells[7].ToString(),
-            dgvTemplateovi.SelectedCells[8].ToString(),
-            dgvTemplateovi.SelectedCells[9].ToString(), };*/
 
 
+            /*try
+            {*/
+                if(dgvTemplateovi.SelectedRows.Count == 1)
+                {
+                    p = new string[] {dgvTemplateovi.SelectedRows[0].Cells[1].Value.ToString(),
+                    dgvTemplateovi.SelectedRows[0].Cells[2].Value.ToString(),
+                    dgvTemplateovi.SelectedRows[0].Cells[3].Value.ToString(),
+                    dgvTemplateovi.SelectedRows[0].Cells[4].Value.ToString(),
+                    dgvTemplateovi.SelectedRows[0].Cells[5].Value.ToString(),
+                    dgvTemplateovi.SelectedRows[0].Cells[6].Value.ToString(),
+                    dgvTemplateovi.SelectedRows[0].Cells[7].Value.ToString(),
+                    dgvTemplateovi.SelectedRows[0].Cells[8].Value.ToString(),
+                    dgvTemplateovi.SelectedRows[0].Cells[9].Value.ToString()};
+                }
+               
+            /*}
+            catch (Exception ex)
+            {
+                MessageBox.Show("Niste lepo selektovali");
+            }*/
 
-            p = new string[] {dgvTemplateovi.SelectedRows[0].Cells[1].Value.ToString(),
-            dgvTemplateovi.SelectedRows[0].Cells[2].Value.ToString(),
-            dgvTemplateovi.SelectedRows[0].Cells[3].Value.ToString(),
-            dgvTemplateovi.SelectedRows[0].Cells[4].Value.ToString(),
-            dgvTemplateovi.SelectedRows[0].Cells[5].Value.ToString(),
-            dgvTemplateovi.SelectedRows[0].Cells[6].Value.ToString(),
-            dgvTemplateovi.SelectedRows[0].Cells[7].Value.ToString(),
-            dgvTemplateovi.SelectedRows[0].Cells[8].Value.ToString(),
-            dgvTemplateovi.SelectedRows[0].Cells[9].Value.ToString()};
+            
 
             //Form1.strahinja.iskoristiTemplate(p);
         }

@@ -16,6 +16,9 @@ namespace matura
         public int u = 0;
         templateovi temp = new templateovi();
 
+
+
+
         public string[] redovi = File.ReadAllLines("ucenici.txt");
         public unesi()
         {
@@ -24,6 +27,9 @@ namespace matura
 
         public void iskoristiTemplate(string[] s)
         {
+            if (s == null)
+                return;
+
             txtIme.Text = s[0];
             txtPrezime.Text = s[1];
             cbSkola.Text = s[2];
@@ -68,7 +74,7 @@ namespace matura
 
         private void cbTreciPredmet_SelectedIndexChanged(object sender, EventArgs e)
         {
-         
+            
         }
 
         private void cbSkola_SelectedIndexChanged(object sender, EventArgs e)
