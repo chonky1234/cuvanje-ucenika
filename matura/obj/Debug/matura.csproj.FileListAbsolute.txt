@@ -49,3 +49,16 @@ D:\PROGRAMIRANJE\C#\matura najnovija\cuvanje-ucenika-main\matura\obj\Debug\matur
 D:\PROGRAMIRANJE\C#\matura najnovija\cuvanje-ucenika-main\matura\obj\Debug\matura.csproj.CoreCompileInputs.cache
 D:\PROGRAMIRANJE\C#\matura najnovija\cuvanje-ucenika-main\matura\obj\Debug\matura.exe
 D:\PROGRAMIRANJE\C#\matura najnovija\cuvanje-ucenika-main\matura\obj\Debug\matura.pdb
+D:\PROGRAMIRANJE\C#\cuvanje-ucenika\matura\bin\Debug\matura.exe.config
+D:\PROGRAMIRANJE\C#\cuvanje-ucenika\matura\bin\Debug\matura.exe
+D:\PROGRAMIRANJE\C#\cuvanje-ucenika\matura\bin\Debug\matura.pdb
+D:\PROGRAMIRANJE\C#\cuvanje-ucenika\matura\obj\Debug\matura.csproj.AssemblyReference.cache
+D:\PROGRAMIRANJE\C#\cuvanje-ucenika\matura\obj\Debug\matura.editujUcenika.resources
+D:\PROGRAMIRANJE\C#\cuvanje-ucenika\matura\obj\Debug\matura.Form1.resources
+D:\PROGRAMIRANJE\C#\cuvanje-ucenika\matura\obj\Debug\matura.Properties.Resources.resources
+D:\PROGRAMIRANJE\C#\cuvanje-ucenika\matura\obj\Debug\matura.templateovi.resources
+D:\PROGRAMIRANJE\C#\cuvanje-ucenika\matura\obj\Debug\matura.unesi.resources
+D:\PROGRAMIRANJE\C#\cuvanje-ucenika\matura\obj\Debug\matura.csproj.GenerateResource.cache
+D:\PROGRAMIRANJE\C#\cuvanje-ucenika\matura\obj\Debug\matura.csproj.CoreCompileInputs.cache
+D:\PROGRAMIRANJE\C#\cuvanje-ucenika\matura\obj\Debug\matura.exe
+D:\PROGRAMIRANJE\C#\cuvanje-ucenika\matura\obj\Debug\matura.pdb

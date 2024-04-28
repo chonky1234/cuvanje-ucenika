@@ -50,15 +50,6 @@ namespace matura
         {
             for (int i = 0; i < 1; i++)
             {
-                Process.Start(Directory.GetCurrentDirectory() + @"\1.png");
-                Process.Start(Directory.GetCurrentDirectory() + @"\2.png");
-                Process.Start(Directory.GetCurrentDirectory() + @"\3.png");
-                Process.Start(Directory.GetCurrentDirectory() + @"\4.png");
-                Process.Start(Directory.GetCurrentDirectory() + @"\5.png");
-                Process.Start(Directory.GetCurrentDirectory() + @"\6.png");
-                Process.Start(Directory.GetCurrentDirectory() + @"\7.png");
-                Process.Start(Directory.GetCurrentDirectory() + @"\8.png");
-                Process.Start(Directory.GetCurrentDirectory() + @"\9.png");
                 Process.Start(Directory.GetCurrentDirectory() + @"\branko kursor.png");
 
             }
