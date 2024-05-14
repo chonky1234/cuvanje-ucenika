@@ -60,6 +60,15 @@ namespace matura
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.cbSkola = new System.Windows.Forms.ComboBox();
+            this.cbTipMature = new System.Windows.Forms.ComboBox();
+            this.cbTreciPredmet = new System.Windows.Forms.ComboBox();
+            this.cbDrugiPredmet = new System.Windows.Forms.ComboBox();
+            this.cbPrviPredmet = new System.Windows.Forms.ComboBox();
+            this.cbJezik = new System.Windows.Forms.ComboBox();
+            this.txtOdeljenje = new System.Windows.Forms.TextBox();
+            this.txtPrezime = new System.Windows.Forms.TextBox();
+            this.txtIme = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvTemplateovi)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -366,11 +375,142 @@ namespace matura
             this.label1.TabIndex = 25;
             this.label1.Text = "Ime";
             // 
+            // cbSkola
+            // 
+            this.cbSkola.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbSkola.FormattingEnabled = true;
+            this.cbSkola.Items.AddRange(new object[] {
+            "Prva Beogradska Gimnazija",
+            "Druga  Beogradska Gimnazija",
+            "Treca  Beogradska Gimnazija",
+            "Cetvrta  Beogradska Gimnazija",
+            "Peta  Beogradska Gimnazija",
+            "Sesta  Beogradska Gimnazija",
+            "Sedma  Beogradska Gimnazija",
+            "Elektrotehnica skola Tesla",
+            "Sveti Sava",
+            "Graficka Skola",
+            "Medicinska Skola",
+            "Masinska skola",
+            ""});
+            this.cbSkola.Location = new System.Drawing.Point(401, 253);
+            this.cbSkola.Margin = new System.Windows.Forms.Padding(4);
+            this.cbSkola.MaximumSize = new System.Drawing.Size(160, 0);
+            this.cbSkola.Name = "cbSkola";
+            this.cbSkola.Size = new System.Drawing.Size(160, 24);
+            this.cbSkola.TabIndex = 42;
+            // 
+            // cbTipMature
+            // 
+            this.cbTipMature.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbTipMature.FormattingEnabled = true;
+            this.cbTipMature.Items.AddRange(new object[] {
+            "Opsti",
+            "Strucni",
+            "Umetnicki"});
+            this.cbTipMature.Location = new System.Drawing.Point(401, 325);
+            this.cbTipMature.Margin = new System.Windows.Forms.Padding(4);
+            this.cbTipMature.MaximumSize = new System.Drawing.Size(160, 0);
+            this.cbTipMature.Name = "cbTipMature";
+            this.cbTipMature.Size = new System.Drawing.Size(160, 24);
+            this.cbTipMature.TabIndex = 37;
+            // 
+            // cbTreciPredmet
+            // 
+            this.cbTreciPredmet.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbTreciPredmet.FormattingEnabled = true;
+            this.cbTreciPredmet.Items.AddRange(new object[] {
+            "Programiranje",
+            "Biologija",
+            "Hemija"});
+            this.cbTreciPredmet.Location = new System.Drawing.Point(401, 514);
+            this.cbTreciPredmet.Margin = new System.Windows.Forms.Padding(4);
+            this.cbTreciPredmet.MaximumSize = new System.Drawing.Size(160, 0);
+            this.cbTreciPredmet.Name = "cbTreciPredmet";
+            this.cbTreciPredmet.Size = new System.Drawing.Size(160, 24);
+            this.cbTreciPredmet.TabIndex = 41;
+            // 
+            // cbDrugiPredmet
+            // 
+            this.cbDrugiPredmet.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbDrugiPredmet.FormattingEnabled = true;
+            this.cbDrugiPredmet.Items.AddRange(new object[] {
+            "Matematika"});
+            this.cbDrugiPredmet.Location = new System.Drawing.Point(401, 464);
+            this.cbDrugiPredmet.Margin = new System.Windows.Forms.Padding(4);
+            this.cbDrugiPredmet.MaximumSize = new System.Drawing.Size(160, 0);
+            this.cbDrugiPredmet.Name = "cbDrugiPredmet";
+            this.cbDrugiPredmet.Size = new System.Drawing.Size(160, 24);
+            this.cbDrugiPredmet.TabIndex = 40;
+            // 
+            // cbPrviPredmet
+            // 
+            this.cbPrviPredmet.FormattingEnabled = true;
+            this.cbPrviPredmet.Location = new System.Drawing.Point(401, 418);
+            this.cbPrviPredmet.Margin = new System.Windows.Forms.Padding(4);
+            this.cbPrviPredmet.MaximumSize = new System.Drawing.Size(160, 0);
+            this.cbPrviPredmet.Name = "cbPrviPredmet";
+            this.cbPrviPredmet.Size = new System.Drawing.Size(160, 24);
+            this.cbPrviPredmet.TabIndex = 39;
+            // 
+            // cbJezik
+            // 
+            this.cbJezik.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbJezik.FormattingEnabled = true;
+            this.cbJezik.Items.AddRange(new object[] {
+            "Srpski",
+            "Engleski",
+            "Ruski",
+            "Madjarski",
+            "Albanski"});
+            this.cbJezik.Location = new System.Drawing.Point(401, 371);
+            this.cbJezik.Margin = new System.Windows.Forms.Padding(4);
+            this.cbJezik.MaximumSize = new System.Drawing.Size(160, 0);
+            this.cbJezik.Name = "cbJezik";
+            this.cbJezik.Size = new System.Drawing.Size(160, 24);
+            this.cbJezik.TabIndex = 38;
+            // 
+            // txtOdeljenje
+            // 
+            this.txtOdeljenje.Location = new System.Drawing.Point(401, 290);
+            this.txtOdeljenje.Margin = new System.Windows.Forms.Padding(4);
+            this.txtOdeljenje.MaximumSize = new System.Drawing.Size(160, 22);
+            this.txtOdeljenje.Name = "txtOdeljenje";
+            this.txtOdeljenje.Size = new System.Drawing.Size(160, 22);
+            this.txtOdeljenje.TabIndex = 36;
+            // 
+            // txtPrezime
+            // 
+            this.txtPrezime.Location = new System.Drawing.Point(401, 218);
+            this.txtPrezime.Margin = new System.Windows.Forms.Padding(4);
+            this.txtPrezime.MaximumSize = new System.Drawing.Size(160, 22);
+            this.txtPrezime.Name = "txtPrezime";
+            this.txtPrezime.Size = new System.Drawing.Size(160, 22);
+            this.txtPrezime.TabIndex = 35;
+            // 
+            // txtIme
+            // 
+            this.txtIme.Location = new System.Drawing.Point(401, 186);
+            this.txtIme.Margin = new System.Windows.Forms.Padding(4);
+            this.txtIme.MaximumSize = new System.Drawing.Size(160, 22);
+            this.txtIme.Name = "txtIme";
+            this.txtIme.Size = new System.Drawing.Size(160, 22);
+            this.txtIme.TabIndex = 34;
+            // 
             // editujUcenika
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1067, 554);
+            this.Controls.Add(this.cbSkola);
+            this.Controls.Add(this.cbTipMature);
+            this.Controls.Add(this.cbTreciPredmet);
+            this.Controls.Add(this.cbDrugiPredmet);
+            this.Controls.Add(this.cbPrviPredmet);
+            this.Controls.Add(this.cbJezik);
+            this.Controls.Add(this.txtOdeljenje);
+            this.Controls.Add(this.txtPrezime);
+            this.Controls.Add(this.txtIme);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
@@ -435,5 +575,14 @@ namespace matura
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.ComboBox cbSkola;
+        private System.Windows.Forms.ComboBox cbTipMature;
+        private System.Windows.Forms.ComboBox cbTreciPredmet;
+        private System.Windows.Forms.ComboBox cbDrugiPredmet;
+        private System.Windows.Forms.ComboBox cbPrviPredmet;
+        private System.Windows.Forms.ComboBox cbJezik;
+        private System.Windows.Forms.TextBox txtOdeljenje;
+        private System.Windows.Forms.TextBox txtPrezime;
+        private System.Windows.Forms.TextBox txtIme;
     }
 }

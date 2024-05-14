@@ -18,11 +18,15 @@ namespace matura
 
 
 
+        public List<string> redovi = File.ReadLines("ucenici.txt").ToList();
+        
+        
 
-        public string[] redovi = File.ReadAllLines("ucenici.txt");
+        //public string[] redovi = File.ReadAllLines("ucenici.txt");
         public unesi()
         {
             InitializeComponent();
+            textBox1.Text = redovi.ToString();
         }
 
         public void iskoristiTemplate(string[] s)
@@ -55,11 +59,18 @@ namespace matura
 
         private void btSacuvajTemplate_Click(object sender, EventArgs e)
         {
+
+            string b = (txtIme.Text + ";" + txtPrezime.Text + ";" + cbSkola.Text + ";" + txtOdeljenje.Text + ";" + cbTipMature.Text + ";" + cbJezik.Text + ";" + cbPrviPredmet.Text + ";" + cbDrugiPredmet.Text + ";" + cbTreciPredmet.Text + ";");
+            redovi.Add(b);
+
+
             string[] s = {template.br.ToString(), txtIme.Text, txtPrezime.Text, cbSkola.Text, txtOdeljenje.Text, cbTipMature.Text, cbJezik.Text, cbPrviPredmet.Text, cbDrugiPredmet.Text, cbTreciPredmet.Text };
             temp.ubaci(s);
 
+            
             template stefan = new template(txtIme.Text, txtPrezime.Text, cbSkola.Text, txtOdeljenje.Text, cbTipMature.Text, cbJezik.Text, cbPrviPredmet.Text, cbDrugiPredmet.Text, cbTreciPredmet.Text);
             stefan.sacuvajTemplate();
+   
         }
 
         private void cbTipMature_SelectedIndexChanged(object sender, EventArgs e)
@@ -216,8 +227,6 @@ Masinska skola
 
         private void btUcenikDesno_Click(object sender, EventArgs e)
         {
-            
-
 
             /*txtIme.Text = s[0];
         txtPrezime.Text = s[1];
@@ -239,7 +248,7 @@ Masinska skola
             cbTreciPredmet.Text = "";
 
             //u++;
-            u = (u + 1) % redovi.Length;
+            u = (u + 1) % redovi.Count;
             int b = 0;
             for (int i = 0; i < redovi[u].Length; i++)
             {
@@ -267,32 +276,31 @@ Masinska skola
                 }
                 else if (b == 4)
                 {
-                    cbTipMature.Text += redovi[u][i];
+                    cbTipMature.SelectedText += redovi[u][i];
                 }
                 else if (b == 5)
                 {
-                    cbJezik.Text += redovi[u][i];
+                    cbJezik.SelectedText += redovi[u][i];
                 }
                 else if (b == 6)
                 {
-                    cbPrviPredmet.Text += redovi[u][i];
+                    cbPrviPredmet.SelectedText += redovi[u][i];
                 }
                 else if (b == 7)
                 {
-                    cbDrugiPredmet.Text += redovi[u][i];
+                    cbDrugiPredmet.SelectedText += redovi[u][i];
                 }
                 else if (b == 8)
                 {
-                    cbTreciPredmet.Text += redovi[u][i];
+                    cbTreciPredmet.SelectedText += redovi[u][i];
+                    
                 }
             }
 
-            
         }
 
         private void btUcenikLevo_Click(object sender, EventArgs e)
         {
-        
 
             /*txtIme.Text = s[0];
         txtPrezime.Text = s[1];
@@ -313,7 +321,7 @@ Masinska skola
             cbDrugiPredmet.Text = "";
             cbTreciPredmet.Text = "";
 
-            u = (u - 1 + redovi.Length) % redovi.Length;
+            u = (u - 1 + redovi.Count) % redovi.Count;
             int b = 0;
             for (int i = 0; i < redovi[u].Length; i++)
             {
@@ -372,6 +380,11 @@ Masinska skola
             //templateovi temp = new templateovi();
             temp.ShowDialog();
             iskoristiTemplate(temp.p);
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

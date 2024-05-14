@@ -32,3 +32,10 @@ dfsfd;fsdffsdf;Prva Beogradska Gimnazija;ee;Strucni;Srpski;Srpski;Matematika;Pro
 ybg;ybg;Treca  Beogradska Gimnazija;ybg;Strucni;Engleski;Engleski;Matematika;Hemija
 dsadsa;fsdffsdf;Prva Beogradska Gimnazija;ee;Strucni;Srpski;Srpski;Matematika;Programiranje
 dsadsadd;fsdffsdf;;ee;;;Srpski;;
+\\\;asdas;asd;asd;Strucni;asdas;asdas;asdasd;asdasd
+ababababa;Peric;Prva Beogradska Gimnazija;3;Strucni;Srpski;Srpski;Matematika;Programiranje
+gagagagaga;Peric;Prva Beogradska Gimnazija;3;Strucni;Srpski;SrpskiSrpski;Matematika;Programiranje
+eaeaeaeaeaea;Peric;Prva Beogradska Gimnazija;3;Strucni;Srpski;SrpskiSrpskiSrpski;Matematika;Programiranje
+asasasasa;Peric;Prva Beogradska Gimnazija;3;Strucni;Srpski;Srpski;Matematika;Programiranje
+ttttttttttt;Peric;Prva Beogradska Gimnazija;3;Strucni;Srpski;Srpski;Matematika;Programiranje
+yyyy;Peric;Prva Beogradska Gimnazija;3;Strucni;Srpski;Srpski;Matematika;Programiranje
