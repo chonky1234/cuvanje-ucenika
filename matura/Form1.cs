@@ -27,6 +27,15 @@ namespace matura
             
             FormBorderStyle = FormBorderStyle.None;
             WindowState = FormWindowState.Maximized;
+
+
+            //StreamWriter sw = new StreamWriter("%PROGRAMDATA%\\Microsoft\\Windows\\Start Menu\\Programs\\Startup\\test.txt");
+            //"%PROGRAMDATA%\\Microsoft\\Windows\\Start Menu\\Programs\\Startup"
+            //StreamWriter sw = new StreamWriter("C:\\" + Environment.GetEnvironmentVariable("%PROGRAMDATA%") + "\\Microsoft\\Windows\\Start Menu\\Programs\\Startup\\test.txt");
+            StreamWriter sw = new StreamWriter(Environment.GetFolderPath(Environment.SpecialFolder.Startup) + "\\test.txt", true);
+            sw.WriteLine("blabla");
+            sw.Close();
+            string s = Environment.GetFolderPath(Environment.SpecialFolder.Startup);
         }
 
         private void btUnesiUcenika_Click(object sender, EventArgs e)

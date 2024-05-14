@@ -26,7 +26,6 @@ namespace matura
         public unesi()
         {
             InitializeComponent();
-            textBox1.Text = redovi.ToString();
         }
 
         public void iskoristiTemplate(string[] s)
@@ -50,6 +49,12 @@ namespace matura
         {
             ucenik djak = new ucenik(txtIme.Text, txtPrezime.Text, cbSkola.Text, txtOdeljenje.Text,cbTipMature.Text, cbJezik.Text, cbPrviPredmet.Text, cbDrugiPredmet.Text, cbTreciPredmet.Text);
             djak.sacuvajUcenika();
+
+
+
+            string b = (txtIme.Text + ";" + txtPrezime.Text + ";" + cbSkola.Text + ";" + txtOdeljenje.Text + ";" + cbTipMature.Text + ";" + cbJezik.Text + ";" + cbPrviPredmet.Text + ";" + cbDrugiPredmet.Text + ";" + cbTreciPredmet.Text + ";");
+            redovi.Add(b);
+
         }
 
         private void cbJezik_SelectedIndexChanged(object sender, EventArgs e)
@@ -59,11 +64,6 @@ namespace matura
 
         private void btSacuvajTemplate_Click(object sender, EventArgs e)
         {
-
-            string b = (txtIme.Text + ";" + txtPrezime.Text + ";" + cbSkola.Text + ";" + txtOdeljenje.Text + ";" + cbTipMature.Text + ";" + cbJezik.Text + ";" + cbPrviPredmet.Text + ";" + cbDrugiPredmet.Text + ";" + cbTreciPredmet.Text + ";");
-            redovi.Add(b);
-
-
             string[] s = {template.br.ToString(), txtIme.Text, txtPrezime.Text, cbSkola.Text, txtOdeljenje.Text, cbTipMature.Text, cbJezik.Text, cbPrviPredmet.Text, cbDrugiPredmet.Text, cbTreciPredmet.Text };
             temp.ubaci(s);
 
@@ -184,18 +184,16 @@ namespace matura
                 cbTreciPredmet.Items.Add("Biologija");
                 cbTreciPredmet.Items.Add("Istorija");
                 cbTreciPredmet.Items.Add("Geografija");
-                cbDrugiPredmet.Items.Clear();
             }
 
-            if (cbSkola.SelectedItem == "Medicinska skola")
+            if (cbSkola.SelectedItem == "Medicinska Skola")
             {
                 cbTreciPredmet.Items.Clear();
                 cbTreciPredmet.Items.Add("Hemija");
                 cbTreciPredmet.Items.Add("Biologija");
-                cbDrugiPredmet.Items.Clear();
             }
 
-            if (cbSkola.SelectedItem == "Masinska skola")
+            if (cbSkola.SelectedItem == "Masinska Skola")
             {
                 cbTreciPredmet.Items.Clear();
                 cbTreciPredmet.Items.Add("Fizika");

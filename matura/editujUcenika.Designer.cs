@@ -42,13 +42,8 @@ namespace matura
             this.TreciPrijemni = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
             this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
             this.textBox7 = new System.Windows.Forms.TextBox();
-            this.textBox8 = new System.Windows.Forms.TextBox();
-            this.textBox9 = new System.Windows.Forms.TextBox();
             this.btPotvrdi = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label9 = new System.Windows.Forms.Label();
@@ -60,22 +55,19 @@ namespace matura
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.cbSkola = new System.Windows.Forms.ComboBox();
-            this.cbTipMature = new System.Windows.Forms.ComboBox();
-            this.cbTreciPredmet = new System.Windows.Forms.ComboBox();
-            this.cbDrugiPredmet = new System.Windows.Forms.ComboBox();
-            this.cbPrviPredmet = new System.Windows.Forms.ComboBox();
-            this.cbJezik = new System.Windows.Forms.ComboBox();
-            this.txtOdeljenje = new System.Windows.Forms.TextBox();
-            this.txtPrezime = new System.Windows.Forms.TextBox();
-            this.txtIme = new System.Windows.Forms.TextBox();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.comboBox3 = new System.Windows.Forms.ComboBox();
+            this.comboBox4 = new System.Windows.Forms.ComboBox();
+            this.comboBox5 = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvTemplateovi)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // dgvTemplateovi
             // 
-            this.dgvTemplateovi.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.dgvTemplateovi.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.dgvTemplateovi.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvTemplateovi.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -177,59 +169,29 @@ namespace matura
             this.textBox1.Location = new System.Drawing.Point(209, 268);
             this.textBox1.Margin = new System.Windows.Forms.Padding(4);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(97, 22);
+            this.textBox1.Size = new System.Drawing.Size(121, 22);
             this.textBox1.TabIndex = 2;
             this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // textBox2
             // 
             this.textBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.textBox2.Location = new System.Drawing.Point(209, 300);
+            this.textBox2.Location = new System.Drawing.Point(209, 299);
             this.textBox2.Margin = new System.Windows.Forms.Padding(4);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(97, 22);
+            this.textBox2.Size = new System.Drawing.Size(121, 22);
             this.textBox2.TabIndex = 2;
             this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
-            // 
-            // textBox3
-            // 
-            this.textBox3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.textBox3.Location = new System.Drawing.Point(209, 332);
-            this.textBox3.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(97, 22);
-            this.textBox3.TabIndex = 3;
-            this.textBox3.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
             // 
             // textBox4
             // 
             this.textBox4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.textBox4.Location = new System.Drawing.Point(209, 364);
+            this.textBox4.Location = new System.Drawing.Point(209, 363);
             this.textBox4.Margin = new System.Windows.Forms.Padding(4);
             this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(97, 22);
+            this.textBox4.Size = new System.Drawing.Size(121, 22);
             this.textBox4.TabIndex = 4;
             this.textBox4.TextChanged += new System.EventHandler(this.textBox4_TextChanged);
-            // 
-            // textBox5
-            // 
-            this.textBox5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.textBox5.Location = new System.Drawing.Point(209, 396);
-            this.textBox5.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(97, 22);
-            this.textBox5.TabIndex = 5;
-            this.textBox5.TextChanged += new System.EventHandler(this.textBox5_TextChanged);
-            // 
-            // textBox6
-            // 
-            this.textBox6.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.textBox6.Location = new System.Drawing.Point(209, 428);
-            this.textBox6.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(97, 22);
-            this.textBox6.TabIndex = 6;
-            this.textBox6.TextChanged += new System.EventHandler(this.textBox6_TextChanged);
             // 
             // textBox7
             // 
@@ -237,32 +199,13 @@ namespace matura
             this.textBox7.Location = new System.Drawing.Point(209, 460);
             this.textBox7.Margin = new System.Windows.Forms.Padding(4);
             this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(97, 22);
+            this.textBox7.Size = new System.Drawing.Size(121, 22);
             this.textBox7.TabIndex = 7;
             this.textBox7.TextChanged += new System.EventHandler(this.textBox7_TextChanged);
             // 
-            // textBox8
-            // 
-            this.textBox8.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.textBox8.Location = new System.Drawing.Point(209, 492);
-            this.textBox8.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(97, 22);
-            this.textBox8.TabIndex = 8;
-            this.textBox8.TextChanged += new System.EventHandler(this.textBox8_TextChanged);
-            // 
-            // textBox9
-            // 
-            this.textBox9.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.textBox9.Location = new System.Drawing.Point(209, 524);
-            this.textBox9.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(97, 22);
-            this.textBox9.TabIndex = 9;
-            // 
             // btPotvrdi
             // 
-            this.btPotvrdi.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btPotvrdi.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.btPotvrdi.Location = new System.Drawing.Point(587, 364);
             this.btPotvrdi.Margin = new System.Windows.Forms.Padding(4);
             this.btPotvrdi.Name = "btPotvrdi";
@@ -289,7 +232,7 @@ namespace matura
             // 
             this.label9.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(105, 528);
+            this.label9.Location = new System.Drawing.Point(105, 527);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(97, 17);
             this.label9.TabIndex = 33;
@@ -299,7 +242,7 @@ namespace matura
             // 
             this.label8.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(105, 497);
+            this.label8.Location = new System.Drawing.Point(105, 495);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(99, 17);
             this.label8.TabIndex = 32;
@@ -319,7 +262,7 @@ namespace matura
             // 
             this.label6.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(105, 433);
+            this.label6.Location = new System.Drawing.Point(105, 431);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(40, 17);
             this.label6.TabIndex = 30;
@@ -329,7 +272,7 @@ namespace matura
             // 
             this.label5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(105, 404);
+            this.label5.Location = new System.Drawing.Point(105, 399);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(76, 17);
             this.label5.TabIndex = 29;
@@ -339,7 +282,7 @@ namespace matura
             // 
             this.label4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(105, 369);
+            this.label4.Location = new System.Drawing.Point(105, 367);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(68, 17);
             this.label4.TabIndex = 28;
@@ -375,11 +318,11 @@ namespace matura
             this.label1.TabIndex = 25;
             this.label1.Text = "Ime";
             // 
-            // cbSkola
+            // comboBox1
             // 
-            this.cbSkola.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cbSkola.FormattingEnabled = true;
-            this.cbSkola.Items.AddRange(new object[] {
+            this.comboBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
             "Prva Beogradska Gimnazija",
             "Druga  Beogradska Gimnazija",
             "Treca  Beogradska Gimnazija",
@@ -391,126 +334,59 @@ namespace matura
             "Sveti Sava",
             "Graficka Skola",
             "Medicinska Skola",
-            "Masinska skola",
-            ""});
-            this.cbSkola.Location = new System.Drawing.Point(401, 253);
-            this.cbSkola.Margin = new System.Windows.Forms.Padding(4);
-            this.cbSkola.MaximumSize = new System.Drawing.Size(160, 0);
-            this.cbSkola.Name = "cbSkola";
-            this.cbSkola.Size = new System.Drawing.Size(160, 24);
-            this.cbSkola.TabIndex = 42;
+            "Masinska Skola"});
+            this.comboBox1.Location = new System.Drawing.Point(209, 330);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(121, 24);
+            this.comboBox1.TabIndex = 43;
+            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
-            // cbTipMature
+            // comboBox2
             // 
-            this.cbTipMature.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cbTipMature.FormattingEnabled = true;
-            this.cbTipMature.Items.AddRange(new object[] {
-            "Opsti",
-            "Strucni",
-            "Umetnicki"});
-            this.cbTipMature.Location = new System.Drawing.Point(401, 325);
-            this.cbTipMature.Margin = new System.Windows.Forms.Padding(4);
-            this.cbTipMature.MaximumSize = new System.Drawing.Size(160, 0);
-            this.cbTipMature.Name = "cbTipMature";
-            this.cbTipMature.Size = new System.Drawing.Size(160, 24);
-            this.cbTipMature.TabIndex = 37;
+            this.comboBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.comboBox2.FormattingEnabled = true;
+            this.comboBox2.Location = new System.Drawing.Point(209, 394);
+            this.comboBox2.Name = "comboBox2";
+            this.comboBox2.Size = new System.Drawing.Size(121, 24);
+            this.comboBox2.TabIndex = 44;
             // 
-            // cbTreciPredmet
+            // comboBox3
             // 
-            this.cbTreciPredmet.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cbTreciPredmet.FormattingEnabled = true;
-            this.cbTreciPredmet.Items.AddRange(new object[] {
-            "Programiranje",
-            "Biologija",
-            "Hemija"});
-            this.cbTreciPredmet.Location = new System.Drawing.Point(401, 514);
-            this.cbTreciPredmet.Margin = new System.Windows.Forms.Padding(4);
-            this.cbTreciPredmet.MaximumSize = new System.Drawing.Size(160, 0);
-            this.cbTreciPredmet.Name = "cbTreciPredmet";
-            this.cbTreciPredmet.Size = new System.Drawing.Size(160, 24);
-            this.cbTreciPredmet.TabIndex = 41;
+            this.comboBox3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.comboBox3.FormattingEnabled = true;
+            this.comboBox3.Location = new System.Drawing.Point(209, 427);
+            this.comboBox3.Name = "comboBox3";
+            this.comboBox3.Size = new System.Drawing.Size(121, 24);
+            this.comboBox3.TabIndex = 45;
             // 
-            // cbDrugiPredmet
+            // comboBox4
             // 
-            this.cbDrugiPredmet.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cbDrugiPredmet.FormattingEnabled = true;
-            this.cbDrugiPredmet.Items.AddRange(new object[] {
-            "Matematika"});
-            this.cbDrugiPredmet.Location = new System.Drawing.Point(401, 464);
-            this.cbDrugiPredmet.Margin = new System.Windows.Forms.Padding(4);
-            this.cbDrugiPredmet.MaximumSize = new System.Drawing.Size(160, 0);
-            this.cbDrugiPredmet.Name = "cbDrugiPredmet";
-            this.cbDrugiPredmet.Size = new System.Drawing.Size(160, 24);
-            this.cbDrugiPredmet.TabIndex = 40;
+            this.comboBox4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.comboBox4.FormattingEnabled = true;
+            this.comboBox4.Location = new System.Drawing.Point(209, 491);
+            this.comboBox4.Name = "comboBox4";
+            this.comboBox4.Size = new System.Drawing.Size(121, 24);
+            this.comboBox4.TabIndex = 46;
             // 
-            // cbPrviPredmet
+            // comboBox5
             // 
-            this.cbPrviPredmet.FormattingEnabled = true;
-            this.cbPrviPredmet.Location = new System.Drawing.Point(401, 418);
-            this.cbPrviPredmet.Margin = new System.Windows.Forms.Padding(4);
-            this.cbPrviPredmet.MaximumSize = new System.Drawing.Size(160, 0);
-            this.cbPrviPredmet.Name = "cbPrviPredmet";
-            this.cbPrviPredmet.Size = new System.Drawing.Size(160, 24);
-            this.cbPrviPredmet.TabIndex = 39;
-            // 
-            // cbJezik
-            // 
-            this.cbJezik.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cbJezik.FormattingEnabled = true;
-            this.cbJezik.Items.AddRange(new object[] {
-            "Srpski",
-            "Engleski",
-            "Ruski",
-            "Madjarski",
-            "Albanski"});
-            this.cbJezik.Location = new System.Drawing.Point(401, 371);
-            this.cbJezik.Margin = new System.Windows.Forms.Padding(4);
-            this.cbJezik.MaximumSize = new System.Drawing.Size(160, 0);
-            this.cbJezik.Name = "cbJezik";
-            this.cbJezik.Size = new System.Drawing.Size(160, 24);
-            this.cbJezik.TabIndex = 38;
-            // 
-            // txtOdeljenje
-            // 
-            this.txtOdeljenje.Location = new System.Drawing.Point(401, 290);
-            this.txtOdeljenje.Margin = new System.Windows.Forms.Padding(4);
-            this.txtOdeljenje.MaximumSize = new System.Drawing.Size(160, 22);
-            this.txtOdeljenje.Name = "txtOdeljenje";
-            this.txtOdeljenje.Size = new System.Drawing.Size(160, 22);
-            this.txtOdeljenje.TabIndex = 36;
-            // 
-            // txtPrezime
-            // 
-            this.txtPrezime.Location = new System.Drawing.Point(401, 218);
-            this.txtPrezime.Margin = new System.Windows.Forms.Padding(4);
-            this.txtPrezime.MaximumSize = new System.Drawing.Size(160, 22);
-            this.txtPrezime.Name = "txtPrezime";
-            this.txtPrezime.Size = new System.Drawing.Size(160, 22);
-            this.txtPrezime.TabIndex = 35;
-            // 
-            // txtIme
-            // 
-            this.txtIme.Location = new System.Drawing.Point(401, 186);
-            this.txtIme.Margin = new System.Windows.Forms.Padding(4);
-            this.txtIme.MaximumSize = new System.Drawing.Size(160, 22);
-            this.txtIme.Name = "txtIme";
-            this.txtIme.Size = new System.Drawing.Size(160, 22);
-            this.txtIme.TabIndex = 34;
+            this.comboBox5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.comboBox5.FormattingEnabled = true;
+            this.comboBox5.Location = new System.Drawing.Point(209, 524);
+            this.comboBox5.Name = "comboBox5";
+            this.comboBox5.Size = new System.Drawing.Size(121, 24);
+            this.comboBox5.TabIndex = 47;
             // 
             // editujUcenika
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1067, 554);
-            this.Controls.Add(this.cbSkola);
-            this.Controls.Add(this.cbTipMature);
-            this.Controls.Add(this.cbTreciPredmet);
-            this.Controls.Add(this.cbDrugiPredmet);
-            this.Controls.Add(this.cbPrviPredmet);
-            this.Controls.Add(this.cbJezik);
-            this.Controls.Add(this.txtOdeljenje);
-            this.Controls.Add(this.txtPrezime);
-            this.Controls.Add(this.txtIme);
+            this.Controls.Add(this.comboBox5);
+            this.Controls.Add(this.comboBox4);
+            this.Controls.Add(this.comboBox3);
+            this.Controls.Add(this.comboBox2);
+            this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
@@ -521,13 +397,8 @@ namespace matura
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btPotvrdi);
-            this.Controls.Add(this.textBox9);
-            this.Controls.Add(this.textBox8);
             this.Controls.Add(this.textBox7);
-            this.Controls.Add(this.textBox6);
-            this.Controls.Add(this.textBox5);
             this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.dgvTemplateovi);
@@ -547,13 +418,8 @@ namespace matura
         private System.Windows.Forms.DataGridView dgvTemplateovi;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox6;
         private System.Windows.Forms.TextBox textBox7;
-        private System.Windows.Forms.TextBox textBox8;
-        private System.Windows.Forms.TextBox textBox9;
         private System.Windows.Forms.Button btPotvrdi;
         private System.Windows.Forms.DataGridViewButtonColumn Templates;
         private System.Windows.Forms.DataGridViewTextBoxColumn Ime;
@@ -575,14 +441,10 @@ namespace matura
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.ComboBox cbSkola;
-        private System.Windows.Forms.ComboBox cbTipMature;
-        private System.Windows.Forms.ComboBox cbTreciPredmet;
-        private System.Windows.Forms.ComboBox cbDrugiPredmet;
-        private System.Windows.Forms.ComboBox cbPrviPredmet;
-        private System.Windows.Forms.ComboBox cbJezik;
-        private System.Windows.Forms.TextBox txtOdeljenje;
-        private System.Windows.Forms.TextBox txtPrezime;
-        private System.Windows.Forms.TextBox txtIme;
+        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.ComboBox comboBox3;
+        private System.Windows.Forms.ComboBox comboBox4;
+        private System.Windows.Forms.ComboBox comboBox5;
     }
 }

@@ -58,15 +58,19 @@ namespace matura
 
                     textBox1.Text = dgvTemplateovi.SelectedRows[0].Cells[1].Value.ToString();
                     textBox2.Text = dgvTemplateovi.SelectedRows[0].Cells[2].Value.ToString();
-                    textBox3.Text = dgvTemplateovi.SelectedRows[0].Cells[3].Value.ToString();
+                    comboBox1.Text = dgvTemplateovi.SelectedRows[0].Cells[3].Value.ToString();
                     textBox4.Text = dgvTemplateovi.SelectedRows[0].Cells[4].Value.ToString();
-                    textBox5.Text = dgvTemplateovi.SelectedRows[0].Cells[5].Value.ToString();
-                    textBox6.Text = dgvTemplateovi.SelectedRows[0].Cells[6].Value.ToString();
+                    comboBox2.Text = dgvTemplateovi.SelectedRows[0].Cells[5].Value.ToString();
+                    comboBox3.Text = dgvTemplateovi.SelectedRows[0].Cells[6].Value.ToString();
                     textBox7.Text = dgvTemplateovi.SelectedRows[0].Cells[7].Value.ToString();
-                    textBox8.Text = dgvTemplateovi.SelectedRows[0].Cells[8].Value.ToString();
-                    textBox9.Text = dgvTemplateovi.SelectedRows[0].Cells[9].Value.ToString();
+                    comboBox4.Text = dgvTemplateovi.SelectedRows[0].Cells[8].Value.ToString();
+                    comboBox5.Text = dgvTemplateovi.SelectedRows[0].Cells[9].Value.ToString();
+
+              
+                    
+
                 }
-               
+
             }
             catch(Exception ex)
             {
@@ -138,25 +142,25 @@ namespace matura
 
             dgvTemplateovi.SelectedRows[0].Cells[1].Value = textBox1.Text;
             dgvTemplateovi.SelectedRows[0].Cells[2].Value = textBox2.Text;
-            dgvTemplateovi.SelectedRows[0].Cells[3].Value = textBox3.Text;
+            dgvTemplateovi.SelectedRows[0].Cells[3].Value = comboBox1.Text;
             dgvTemplateovi.SelectedRows[0].Cells[4].Value = textBox4.Text;
-            dgvTemplateovi.SelectedRows[0].Cells[5].Value = textBox5.Text;
-            dgvTemplateovi.SelectedRows[0].Cells[6].Value = textBox6.Text;
+            dgvTemplateovi.SelectedRows[0].Cells[5].Value = comboBox2.Text;
+            dgvTemplateovi.SelectedRows[0].Cells[6].Value = comboBox3.Text;
             dgvTemplateovi.SelectedRows[0].Cells[7].Value = textBox7.Text;
-            dgvTemplateovi.SelectedRows[0].Cells[8].Value = textBox8.Text;
-            dgvTemplateovi.SelectedRows[0].Cells[9].Value = textBox9.Text;
+            dgvTemplateovi.SelectedRows[0].Cells[8].Value = comboBox4.Text;
+            dgvTemplateovi.SelectedRows[0].Cells[9].Value = comboBox5.Text;
 
 
 
             string test1 = textBox1.Text;
             string test2 = textBox2.Text;
-            string test3 = textBox3.Text;
+            string test3 = comboBox1.Text;
             string test4 = textBox4.Text;
-            string test5 = textBox5.Text;
-            string test6 = textBox6.Text;
+            string test5 = comboBox2.Text;
+            string test6 = comboBox3.Text;
             string test7 = textBox7.Text;
-            string test8 = textBox8.Text;
-            string test9 = textBox9.Text;
+            string test8 = comboBox4.Text;
+            string test9 = comboBox5.Text;
 
 
             List<string> petar = new List<string>();
@@ -191,13 +195,16 @@ namespace matura
             
             string s2 = textBox1.Text + ';' +
                 textBox2.Text + ';' +
-                textBox3.Text + ';' +
+                comboBox1.Text + ';' +
                 textBox4.Text + ';' +
-                textBox5.Text + ';' +
-                textBox6.Text + ';' +
+                comboBox2.Text + ';' +
+                comboBox3.Text + ';' +
                 textBox7.Text + ';' +
-                textBox8.Text + ';' +
-                textBox9.Text;
+                comboBox4.Text + ';' +
+                comboBox5.Text;
+
+
+
 
 
 
@@ -217,6 +224,137 @@ namespace matura
             }
             a.Close();
             int n = 77;
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (comboBox1.SelectedItem == "Prva Beogradska Gimnazija")
+            {
+                comboBox5.Text = "";
+                comboBox5.Items.Clear();
+                comboBox5.Items.Add("Fizika");
+                comboBox5.Items.Add("Programiranje");
+                comboBox5.Items.Add("Biologija");
+                comboBox5.Items.Add("Istorija");
+                comboBox5.Items.Add("Geografija");
+            }
+            if (comboBox1.SelectedItem == "Druga Beogradska Gimnazija")
+            {
+                comboBox5.Text = "";
+                comboBox5.Items.Clear();
+                comboBox5.Items.Add("Fizika");
+                comboBox5.Items.Add("Biologija");
+                comboBox5.Items.Add("Istorija");
+                comboBox5.Items.Add("Geografija");
+            }
+            if (comboBox1.SelectedItem == "Treca Beogradska Gimnazija")
+            {
+                comboBox5.Text = "";
+                comboBox5.Items.Clear();
+                comboBox5.Items.Add("Fizika");
+                comboBox5.Items.Add("Programiranje");
+                comboBox5.Items.Add("Biologija");
+                comboBox5.Items.Add("Istorija");
+                comboBox5.Items.Add("Geografija");
+            }
+            if (comboBox1.SelectedItem == "Cetvrta Beogradska Gimnazija")
+            {
+                comboBox5.Text = "";
+                comboBox5.Items.Clear();
+                comboBox5.Items.Add("Fizika");
+                comboBox5.Items.Add("Programiranje");
+                comboBox5.Items.Add("Biologija");
+                comboBox5.Items.Add("Istorija");
+                comboBox5.Items.Add("Geografija");
+            }
+            if (comboBox1.SelectedItem == "Peta Beogradska Gimnazija")
+            {
+                comboBox5.Text = "";
+                comboBox5.Items.Clear();
+                comboBox5.Items.Add("Fizika");
+                comboBox5.Items.Add("Programiranje");
+                comboBox5.Items.Add("Biologija");
+                comboBox5.Items.Add("Istorija");
+                comboBox5.Items.Add("Geografija");
+            }
+            if (comboBox1.SelectedItem == "Sesta Beogradska Gimnazija")
+            {
+                comboBox5.Text = "";
+                comboBox5.Items.Clear();
+                comboBox5.Items.Add("Fizika");
+                comboBox5.Items.Add("Programiranje");
+                comboBox5.Items.Add("Biologija");
+                comboBox5.Items.Add("Istorija");
+                comboBox5.Items.Add("Geografija");
+            }
+            if (comboBox1.SelectedItem == "Sedma Beogradska Gimnazija")
+            {
+                comboBox5.Text = "";
+                comboBox5.Items.Clear();
+                comboBox5.Items.Add("Fizika");
+                comboBox5.Items.Add("Programiranje");
+                comboBox5.Items.Add("Biologija");
+                comboBox5.Items.Add("Istorija");
+                comboBox5.Items.Add("Geografija");
+            }
+
+
+
+
+            if (comboBox1.SelectedItem == "Elektrotehnica skola Tesla")
+            {
+                comboBox5.Text = "";
+                comboBox5.Items.Clear();
+                comboBox5.Items.Add("Fizika");
+                comboBox5.Items.Add("Programiranje");
+                comboBox5.Items.Add("Elektrotehnicar racunara");
+                comboBox5.Items.Add("Elektrotehnicar informacionih tehnologija");
+                comboBox5.Items.Add("Elektrotehnicar elektrotehnike");
+                comboBox5.Items.Add("Elektrotehnicar energetike");
+            }
+
+            if (comboBox1.SelectedItem == "Sveti Sava")
+            {
+                comboBox5.Text = "";
+                comboBox5.Items.Clear();
+                comboBox5.Items.Add("Fizika");
+                comboBox5.Items.Add("Programiranje");
+                comboBox5.Items.Add("Biologija");
+                comboBox5.Items.Add("Istorija");
+                comboBox5.Items.Add("Geografija");
+            }
+
+            if (comboBox1.SelectedItem == "Graficka Skola")
+            {
+                comboBox5.Text = "";
+                comboBox5.Items.Clear();
+                comboBox5.Items.Add("Fizika");
+                comboBox5.Items.Add("Biologija");
+                comboBox5.Items.Add("Istorija");
+                comboBox5.Items.Add("Geografija");
+            }
+
+            if (comboBox1.SelectedItem == "Medicinska Skola")
+            {
+                comboBox5.Text = "";
+                comboBox5.Items.Clear();
+                comboBox5.Items.Add("Hemija");
+                comboBox5.Items.Add("Biologija");
+            }
+
+            if (comboBox1.SelectedItem == "Masinska Skola")
+            {
+                comboBox5.Text = "";
+                comboBox5.Items.Clear();
+                comboBox5.Items.Add("Fizika");
+                comboBox5.Items.Add("Programiranje");
+                comboBox5.Items.Add("Hemija");
+                comboBox5.Items.Add("Elektrotehnicar racunara");
+                comboBox5.Items.Add("Elektrotehnicar informacionih tehnologija");
+                comboBox5.Items.Add("Elektrotehnicar elektrotehnike");
+                comboBox5.Items.Add("Elektrotehnicar energetike");
+            }
+
         }
     }
 }
